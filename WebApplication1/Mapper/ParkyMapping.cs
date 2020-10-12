@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using NationalParkDemo.Models;
 using NationalParkDemo.Repository;
+using NationalParkDemo.Models.Dtos;
 
 namespace NationalParkDemo.Mapper
 {

@@ -32,7 +32,7 @@ namespace NationalParkDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<INationalParkRepository, NationalPark>();
+            services.AddScoped<INationalParkRepository, NationalParkRepository>();
             services.AddAutoMapper(typeof(ParkyMapping));
             services.AddControllers();
         }

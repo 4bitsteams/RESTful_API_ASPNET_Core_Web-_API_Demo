@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using NationalParkDemo.Models;
+using NationalParkDemo.Models.Dtos;
 
 namespace NationalParkDemo.Data
 {
@@ -13,6 +14,6 @@ namespace NationalParkDemo.Data
         {
         }
 
-        public DbSet<NationalParkDto> NationalParks { get; set; }
+        public DbSet<NationalPark> NationalParks { get; set; }
     }
 }
